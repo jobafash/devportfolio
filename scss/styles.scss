@@ -1,40 +1,5 @@
-/*!
-    Title: Dev Portfolio Template
-    Version: 1.2.2
-    Last Change: 03/25/2020
-    Author: Ryan Fitzgerald
-    Repo: https://github.com/RyanFitzgerald/devportfolio-template
-    Issues: https://github.com/RyanFitzgerald/devportfolio-template/issues
-
-    Description: This file contains all the styles associated with the page
-    that don't come from third party libraries. This file gets compiled using
-    Gulp and send to the /css folder which is then loaded on the page.
-*/
-/*
-    File Contents:
-
-        1. Variables
-        2. Mixins
-        3. Global Styles
-        4. Lead Styles
-        5. About Styles
-        6. Experience Styles
-        7. Education Styles
-        8. Project Styles
-        9. Skills Styles
-        10. Contact Styles
-        11. Optional Section Styles
-        12. Media Queries
-*/
-
-/*
-    ------------------------
-    ----- 1. Variables -----
-    ------------------------
-*/
-
 // Define base and accent colors
-$base-color: #3498db;
+$base-color: #000000;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -48,11 +13,6 @@ $border: #dcd9d9;
 $heading: #374054;
 $text: #74808a;
 
-/*
-    ---------------------
-    ----- 2. Mixins -----
-    ---------------------
-*/
 
 @mixin transition($duration: 0.5s, $func: ease, $property: all) {
     transition: #{$duration} #{$func} #{$property};
@@ -85,7 +45,7 @@ $text: #74808a;
 */
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 16px;
 
     &.active {
@@ -350,7 +310,7 @@ footer {
     height: 100vh;
     min-height: 500px;
     max-height: 1080px;
-    background: url(../images/lead-bg.jpg);
+    background: url(../images/home.jpg);
     background-size: cover;
     padding: 15px;
     overflow: hidden;
